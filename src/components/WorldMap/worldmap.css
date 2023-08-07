@@ -12,4 +12,40 @@ svg path:hover {
   transform: scale(1.02);
   transition: transform 0.2s ease-in-out;
   z-index: 999;
+  fill: beige;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.world-map-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  margin-top: 2.5%;
+  overflow: hidden;
+}
+
+.selected-city-div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  height: 95%;
+  width: 25%;
+  background-color: white;
+  box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.2);
+  animation: slide-in 0.5s ease;
+  border-radius: 25px;
+}
+
+.selected-city-title {
+  padding: 16px;
 }
