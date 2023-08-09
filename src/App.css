@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #28d4b9;
+  --secondary-color: #c6efeb;
+}
+
 .App {
   text-align: center;
   width: 100vw;
