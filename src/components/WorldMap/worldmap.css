@@ -52,9 +52,12 @@ svg path:hover {
 
 .selected-country-content {
   height: 55%;
+  text-align: justify;
 }
 .selected-country-title {
   padding: 16px;
+  font-size: 1.75rem;
+  color: var(--primary-color);
 }
 
 .selected-country-img {
@@ -62,6 +65,7 @@ svg path:hover {
   height: 35%;
   object-fit: cover;
   border-radius: 25px 25px 0 0;
+  border-bottom: 5px solid var(--primary-color);
 }
 
 .selected-country-button {
