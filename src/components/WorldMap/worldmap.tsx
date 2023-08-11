@@ -1,5 +1,6 @@
 import "./worldmap.css";
-import { useState, useEffect, useRef, MouseEvent } from "react";
+import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function WorldMap() {
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null); // Specify the type for selectedCountry
@@ -26,7 +27,8 @@ function WorldMap() {
   }, []);
 
   function displayCountry(e: any, selectedCountry: any): void {
-    throw new Error("Function not implemented.");
+    const url = `/detailed?country=${encodeURIComponent(selectedCountry)}`;
+    window.location.href = url; // Redirect to the detailed page
   }
 
   return (
@@ -95,8 +97,8 @@ function WorldMap() {
           stroke="black"
           stroke-width="6.4"
           stroke-linejoin="round"
-          id="South America"
-          onClick={(e) => handleCountryClick(e, "South America")}
+          id="SouthAmerica"
+          onClick={(e) => handleCountryClick(e, "SouthAmerica")}
         />
         <path
           fill-rule="evenodd"
