@@ -6,12 +6,35 @@
 
 .detailed-page-left {
   width: 25%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.detailed-container {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  height: 90%;
+  width: 90%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailed-container svg {
+  background-color: white;
+  width: 100%;
+}
+
+.detailed-container p {
+  margin: 1vh;
+  color: white;
+  text-align: justify;
+}
 .detailed-page-right {
   width: 75%;
   display: flex;
