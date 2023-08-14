@@ -35,9 +35,9 @@ function DetailedPage() {
       <div className="detailed-page-left">
         <div className="detailed-container">
           <svg
-            width="500"
-            height="500"
-            viewBox="0 0 500 500"
+            width="600"
+            height="300"
+            viewBox="0 0 600 300"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -61,7 +61,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Mexico" && (
+            {country === "Mexico" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -71,17 +71,35 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "America" && (
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M68.8247 3.76503C64.4881 2.72005 59.9838 4.67365 57.7834 8.55386L5.26183 101.17C3.75172 103.833 3.54453 107.041 4.69956 109.876L23.3064 155.547C25.3274 160.508 30.8981 162.995 35.9406 161.188L52.8229 155.138C54.8839 154.4 57.1302 154.358 59.2172 155.02L122.74 175.15C125.451 176.009 127.668 177.982 128.836 180.574L142.045 209.884C144.675 215.722 152.039 217.618 157.162 213.776L179.666 196.897C181.288 195.681 183.241 194.986 185.267 194.905L228.003 193.196C233.039 192.994 237.438 196.572 238.267 201.544L242.907 229.382C243.212 231.214 244.082 232.904 245.395 234.217V234.217C248.106 236.929 252.249 237.601 255.678 235.886L260.932 233.259C264.805 231.323 266.992 227.114 266.349 222.832L261.695 191.799C261.18 188.371 262.478 184.921 265.124 182.682L288.027 163.303C288.864 162.595 289.578 161.754 290.142 160.814L307.287 132.24C308.379 130.419 310.024 128.993 311.981 128.169L374.908 101.673C382.254 98.5804 383.206 88.5573 376.574 84.1363L343.906 62.3577C341.193 60.549 337.769 60.1766 334.731 61.3598L298.264 75.5606C294.476 77.0357 290.172 76.071 287.376 73.1202L283.703 69.2431C283.058 68.5629 282.322 67.9767 281.514 67.5017L246.844 47.1077C245.994 46.6077 245.075 46.2363 244.117 46.0053L68.8247 3.76503Z"
-                stroke="black"
-                stroke-width="6.4"
-                stroke-linejoin="round"
-              />
+            {country === "America" && (
+              <svg>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M247.825 3.76479C243.488 2.7198 238.984 4.67341 236.784 8.55362L184.262 101.17C182.752 103.833 182.545 107.041 183.7 109.876L202.307 155.547C204.328 160.507 209.898 162.995 214.941 161.188L231.823 155.138C233.884 154.4 236.13 154.358 238.217 155.019L301.74 175.15C304.451 176.009 306.668 177.981 307.836 180.574L321.045 209.884C323.676 215.722 331.039 217.618 336.162 213.776L358.667 196.897C360.288 195.681 362.241 194.986 364.267 194.905L407.003 193.196C412.04 192.994 416.438 196.572 417.267 201.544L421.907 229.382C422.212 231.214 423.082 232.904 424.395 234.217V234.217C427.107 236.929 431.249 237.601 434.679 235.886L439.932 233.259C443.805 231.323 445.992 227.114 445.35 222.831L440.695 191.799C440.181 188.371 441.478 184.921 444.125 182.682L467.027 163.303C467.864 162.594 468.579 161.754 469.143 160.814L486.287 132.24C487.38 130.419 489.024 128.993 490.981 128.169L553.908 101.673C561.254 98.5801 562.206 88.5571 555.575 84.1361L522.907 62.3574C520.194 60.5488 516.769 60.1764 513.731 61.3596L477.264 75.5604C473.476 77.0355 469.173 76.0708 466.377 73.1199L462.703 69.2428C462.059 68.5627 461.322 67.9765 460.514 67.5014L425.844 47.1074C424.995 46.6075 424.075 46.236 423.117 46.005L247.825 3.76479Z"
+                  stroke="black"
+                  stroke-width="6.4"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M48.9369 218.245C54.4061 215.262 61.2422 217.952 63.2123 223.862L67.0612 235.409C68.8616 240.81 65.7959 246.622 60.3216 248.186L50.6604 250.947C44.8719 252.6 38.9449 248.802 38.0295 242.852L36.4488 232.577C35.8082 228.414 37.8457 224.295 41.544 222.278L48.9369 218.245Z"
+                  stroke="black"
+                  stroke-width="6.4"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.37938 228.283C15.039 224.24 22.9436 227.931 23.4771 234.866V234.866C23.9508 241.025 18.1802 245.794 12.2209 244.168L11.0242 243.842C5.6902 242.387 3.22059 236.241 6.06513 231.5V231.5C6.65403 230.519 7.43858 229.669 8.36997 229.004L9.37938 228.283Z"
+                  stroke="black"
+                  stroke-width="6.4"
+                  stroke-linejoin="round"
+                />
+              </svg>
             )}
-            {country == "SouthAmerica" && (
+            {country === "SouthAmerica" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -91,7 +109,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Chile" && (
+            {country === "Chile" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -101,7 +119,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Venezuela" && (
+            {country === "Venezuela" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -111,7 +129,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Brazil" && (
+            {country === "Brazil" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -121,7 +139,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Argentina" && (
+            {country === "Argentina" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -131,27 +149,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "America" && (
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M15.9367 5.24551C21.4059 2.26232 28.242 4.952 30.212 10.8622L34.061 22.4089C35.8614 27.8101 32.7956 33.6224 27.3214 35.1865L17.6602 37.9468C11.8716 39.6007 5.94469 35.8023 5.02926 29.8522L3.44853 19.5776C2.80795 15.4139 4.84543 11.2953 8.54371 9.27806L15.9367 5.24551Z"
-                stroke="black"
-                stroke-width="6.4"
-                stroke-linejoin="round"
-              />
-            )}
-            {country == "America" && (
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M8.37914 5.28255C14.0388 1.23992 21.9434 4.93121 22.4768 11.8659V11.8659C22.9506 18.0246 17.18 22.7937 11.2207 21.1685L10.0239 20.8421C4.68995 19.3874 2.22035 13.241 5.06489 8.50016V8.50016C5.65378 7.51867 6.43833 6.66885 7.36973 6.00356L8.37914 5.28255Z"
-                stroke="black"
-                stroke-width="6.4"
-                stroke-linejoin="round"
-              />
-            )}
-            {country == "Greenland" && (
+            {country === "Greenland" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -161,7 +159,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Iceland" && (
+            {country === "Iceland" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -171,7 +169,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Europe" && (
+            {country === "Europe" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -181,7 +179,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Spain" && (
+            {country === "Spain" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -191,7 +189,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Italia" && (
+            {country === "Italia" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -201,7 +199,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "UnitedKingdom" && (
+            {country === "UnitedKingdom" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -211,7 +209,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Ireland" && (
+            {country === "Ireland" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -221,7 +219,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "NorthAfrica" && (
+            {country === "NorthAfrica" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -231,7 +229,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "EastAfrica" && (
+            {country === "EastAfrica" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -241,7 +239,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "CentralAfrica" && (
+            {country === "CentralAfrica" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -251,7 +249,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "SouthAfrica" && (
+            {country === "SouthAfrica" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -261,7 +259,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Madagascar" && (
+            {country === "Madagascar" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -271,7 +269,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "India" && (
+            {country === "India" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -281,7 +279,7 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country == "Russia" && (
+            {country === "Russia" && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -352,25 +350,34 @@ function DetailedPage() {
               />
             )}
             {country === "Japan" && (
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M38.8198 3.89526C34.9316 3.89526 31.4588 6.32771 30.13 9.98182L24.788 24.6722C24.0172 26.7922 22.5522 28.5892 20.6311 29.7714L8.53631 37.2143C2.38725 40.9984 2.35624 49.9258 8.47888 53.7525V53.7525C11.1103 55.3971 14.3684 55.688 17.2496 54.5355L30.7562 49.1329C33.1758 48.1651 35.122 46.2909 36.1804 43.9096L43.2754 27.9458L47.5096 16.3017C49.7025 10.2713 45.2365 3.89526 38.8198 3.89526V3.89526Z"
-                stroke="black"
-                stroke-width="6.4"
-                stroke-linejoin="round"
-              />
+              <svg>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M57.8199 54.8953C53.9317 54.8953 50.4589 57.3277 49.1302 60.9818L43.7882 75.6722C43.0173 77.7922 41.5523 79.5892 39.6312 80.7714L27.5364 88.2143C21.3874 91.9984 21.3564 100.926 27.479 104.752V104.752C30.1105 106.397 33.3686 106.688 36.2498 105.536L49.7563 100.133C52.1759 99.1651 54.1221 97.2909 55.1805 94.9096L62.2755 78.9458L66.5097 67.3017C68.7026 61.2713 64.2367 54.8953 57.8199 54.8953V54.8953Z"
+                  stroke="black"
+                  stroke-width="6.4"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M31.1138 121.563C30.1003 118.185 27.3824 115.591 23.9608 114.735L15.6676 112.662C9.35618 111.084 3.24231 115.858 3.24231 122.363V124.851C3.24231 129.863 6.95262 134.101 11.9207 134.763L20.6889 135.932C27.8868 136.892 33.6754 130.102 31.5888 123.147L31.1138 121.563Z"
+                  stroke="black"
+                  stroke-width="6.4"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M59.7717 14.7428C54.4009 8.65588 44.3984 11.1667 42.5392 19.0686L39.3396 32.6667C38.636 35.6571 39.346 38.8051 41.2651 41.204L42.6147 42.891C45.232 46.1626 49.6111 47.4558 53.5857 46.1309L65.4368 42.1805C72.2326 39.9153 74.5124 31.4489 69.7729 26.0775L59.7717 14.7428Z"
+                  stroke="black"
+                  stroke-width="6.4"
+                  stroke-linejoin="round"
+                />
+              </svg>
             )}
-            {country === "Japan" && (
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M31.1136 12.5632C30.1002 9.1851 27.3823 6.59063 23.9607 5.73525L15.6675 3.66197C9.35605 2.08412 3.24219 6.85769 3.24219 13.3634V15.851C3.24219 20.863 6.9525 25.1009 11.9206 25.7633L20.6888 26.9324C27.8866 27.8921 33.6753 21.1019 31.5887 14.1466L31.1136 12.5632Z"
-                stroke="black"
-                stroke-width="6.4"
-                stroke-linejoin="round"
-              />
-            )}
+
             {country === "Taiwan" && (
               <path
                 fill-rule="evenodd"
@@ -381,55 +388,46 @@ function DetailedPage() {
                 stroke-linejoin="round"
               />
             )}
-            {country === "Japan" && (
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M24.7716 6.74302C19.4008 0.65612 9.39831 3.16699 7.53905 11.0688L4.33949 24.6669C3.63585 27.6574 4.34583 30.8053 6.26498 33.2043L7.6146 34.8913C10.2318 38.1628 14.611 39.456 18.5856 38.1312L30.4367 34.1808C37.2325 31.9155 39.5123 23.4491 34.7728 18.0777L24.7716 6.74302Z"
-                stroke="black"
-                stroke-width="6.4"
-                stroke-linejoin="round"
-              />
-            )}
+
             {country === "Australia" && (
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M148.624 7.21678C153.102 7.71436 156.695 11.1454 157.397 15.596L161.895 44.0799C162.436 47.5109 164.72 50.4151 167.926 51.7511L180.387 56.9432C185.239 58.9647 190.827 56.8855 193.178 52.1846L199.657 39.2266C202.882 32.7764 211.667 31.7568 216.283 37.2969L236.432 61.4752C238.251 63.6585 239.056 66.5129 238.644 69.325L226.289 153.753C226.211 154.283 226.091 154.806 225.93 155.316L201.507 232.656C200.522 235.774 198.075 238.214 194.954 239.189L174.696 245.52C169.348 247.191 163.67 244.142 162.109 238.761L144.767 178.971C143.873 175.891 141.556 173.426 138.537 172.343L98.4674 157.982C96.2219 157.178 93.7626 157.202 91.5335 158.051L50.5639 173.659C49.5763 174.035 48.5352 174.252 47.4796 174.303L13.8597 175.903C8.07259 176.179 3.2631 171.495 3.38634 165.702L5.22055 79.4942C5.29734 75.8848 7.31371 72.597 10.4961 70.8921L65.9255 41.1978C66.3509 40.9699 66.7592 40.7116 67.1472 40.4247L113.7 6.01648C115.726 4.51866 118.243 3.84113 120.748 4.11941L148.624 7.21678Z"
-                stroke="black"
-                stroke-width="6.4"
-                stroke-linejoin="round"
-              />
-            )}
-            {country === "Australia" && (
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M54.3706 13.3788C54.0746 7.45788 48.7219 3.09298 42.8625 3.99442L11.8639 8.76347C4.79325 9.85127 1.1186 17.7955 4.86792 23.8882L12.0501 35.5591C13.5807 38.0464 16.1222 39.7403 19.007 40.1958L43.8416 44.117C50.1118 45.1071 55.7057 40.08 55.3887 33.74L54.3706 13.3788Z"
-                stroke="black"
-                stroke-width="6.4"
-                stroke-linejoin="round"
-              />
+              <svg>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M148.624 7.21654C153.102 7.71412 156.695 11.1451 157.397 15.5957L161.895 44.0797C162.437 47.5107 164.72 50.4148 167.926 51.7508L180.387 56.943C185.239 58.9645 190.827 56.8853 193.178 52.1843L199.657 39.2263C202.882 32.7762 211.667 31.7566 216.283 37.2966L236.432 61.4749C238.251 63.6583 239.056 66.5126 238.644 69.3248L226.289 153.753C226.212 154.282 226.092 154.805 225.93 155.316L201.507 232.656C200.523 235.774 198.075 238.214 194.954 239.189L174.696 245.52C169.348 247.191 163.67 244.142 162.109 238.761L144.767 178.971C143.873 175.89 141.556 173.425 138.537 172.343L98.4675 157.982C96.222 157.177 93.7628 157.202 91.5337 158.051L50.564 173.658C49.5764 174.035 48.5354 174.252 47.4797 174.302L13.8599 175.903C8.07271 176.179 3.26322 171.494 3.38646 165.702L5.22067 79.494C5.29747 75.8845 7.31383 72.5967 10.4962 70.8919L65.9257 41.1975C66.351 40.9697 66.7593 40.7113 67.1473 40.4245L113.7 6.01624C115.726 4.51841 118.243 3.84088 120.748 4.11916L148.624 7.21654Z"
+                  stroke="black"
+                  stroke-width="6.4"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M187.371 268.379C187.075 262.458 181.722 258.093 175.863 258.994L144.864 263.763C137.793 264.851 134.119 272.796 137.868 278.888L145.05 290.559C146.581 293.046 149.122 294.74 152.007 295.196L176.842 299.117C183.112 300.107 188.706 295.08 188.389 288.74L187.371 268.379Z"
+                  stroke="black"
+                  stroke-width="6.4"
+                  stroke-linejoin="round"
+                />
+              </svg>
             )}
             {country === "NewZealand" && (
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M70.9849 8.3256C67.8513 3.6252 61.449 2.45177 56.8521 5.73529L34.6463 21.5965L8.57928 37.7332C1.1026 42.3616 2.81 53.6924 11.3186 55.912L33.1321 61.6025C36.7485 62.5459 40.5891 61.394 43.0893 58.616L73.1783 25.1837C76.2355 21.7868 76.6009 16.7495 74.0659 12.947L70.9849 8.3256Z"
-                stroke="black"
-                stroke-width="6.4"
-                stroke-linejoin="round"
-              />
-            )}
-            {country === "NewZealand" && (
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M4.27071 52.952C3.93312 55.3151 4.45201 57.721 5.73359 59.7349L10.8107 67.7132C14.6908 73.8106 23.5589 73.9049 27.5678 67.8915L42.2199 45.9134C44.1298 43.0485 44.4315 39.4026 43.0186 36.2627L31.0945 9.76486C28.3554 3.67786 20.5354 1.93196 15.4674 6.27594L13.1658 8.24869C11.323 9.82829 10.1175 12.0242 9.77427 14.427L4.27071 52.952Z"
-                stroke="black"
-                stroke-width="6.4"
-                stroke-linejoin="round"
-              />
+              <svg>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M82.9851 81.3256C79.8514 76.6252 73.4491 75.4518 68.8522 78.7353L46.6465 94.5965L20.5794 110.733C13.1027 115.362 14.8101 126.692 23.3187 128.912L45.1322 134.603C48.7486 135.546 52.5892 134.394 55.0894 131.616L85.1785 98.1837C88.2357 94.7868 88.601 89.7495 86.066 85.947L82.9851 81.3256Z"
+                  stroke="black"
+                  stroke-width="6.4"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M95.2708 55.952C94.9332 58.3151 95.4521 60.721 96.7337 62.7349L101.811 70.7132C105.691 76.8106 114.559 76.9049 118.568 70.8915L133.22 48.9134C135.13 46.0485 135.432 42.4026 134.019 39.2627L122.095 12.7649C119.355 6.67786 111.535 4.93196 106.468 9.27594L104.166 11.2487C102.323 12.8283 101.118 15.0242 100.774 17.427L95.2708 55.952Z"
+                  stroke="black"
+                  stroke-width="6.4"
+                  stroke-linejoin="round"
+                />
+              </svg>
             )}
           </svg>
           <p>
