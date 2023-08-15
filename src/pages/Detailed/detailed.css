@@ -27,7 +27,21 @@
 
 .detailed-container svg {
   background-color: white;
-  width: 100%;
+  width: 90%;
+}
+
+.detailed-container .detailed-map {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60%;
+  border-radius: 5px 5px 0 0;
+}
+
+.detailed-container .detailed-summary {
+  height: 40%;
 }
 
 .detailed-container p {
